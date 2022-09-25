@@ -122,6 +122,7 @@ section {
 .content img {
     width: 50%;
 }
+
 .content:nth-of-type(odd) {
     background-color:#2E4A76;
     color: #ffffff;
