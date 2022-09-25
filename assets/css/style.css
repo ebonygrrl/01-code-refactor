@@ -111,12 +111,6 @@ section {
     max-width: 150px;
 }
 
-.contents {
-    /*width: 75%;
-    display: inline-block;
-    margin-left: 20px;*/
-}
-
 .content:after {
     content: "";
     display: table;
