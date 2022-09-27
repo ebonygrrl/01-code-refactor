@@ -35,34 +35,27 @@ header h1 .seo {
 }
 
 header nav {
-    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     background-color: #59c9a5;
     text-align: center;
 }
 
-header nav ul {
-    list-style-type: none;
-}
-
-header nav ul li {
-    display: inline-block;
-}
-
-header nav ul li a {
-    padding: 20px;
+header nav a {
+    padding: 20px 10px;
     color: #000000;
 }
 
-header nav ul li a:hover {
+header nav a:hover {
     background-color: #287B5F;
     color: #ffffff;
 }
 
 main {
     margin: 70px auto 0;
-    width: 1200px;
 }
 
 section {
@@ -72,7 +65,7 @@ section {
 .hero {
     height: 520px;
     width: 100%;
-    background: url("../images/digital-marketing-meeting.jpg") no-repeat fixed 0 -75px;
+    background: url("../images/digital-marketing-meeting.jpg") no-repeat fixed center;
     background-size: cover;
 }
 
@@ -83,20 +76,16 @@ section {
 }
 
 .benefits {
-    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
-.benefits:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.benefits div {
-    margin: 0 25px;
+.benefit {
+    margin: 0 15px 30px;
     padding: 20px 40px;
-    float: left;
-    width: 350px;
+    flex: 1;
     border: 2px solid #2E4A76;
     border-radius: 10px;
     color: #000000;
@@ -109,40 +98,38 @@ section {
 
 .benefits img {
     display: block;
-    margin: 10px auto;
-    max-width: 150px;
+    margin: 0 auto;
+    max-width: 80%;
 }
 
-.content:after {
-    content: "";
-    display: table;
-    clear: both;
+.contents {    
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.content img {
+article {  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents img {
     width: 50%;
 }
 
-.content:nth-of-type(odd) {
+.content-wrap { 
+    display: flex;
+    padding: 0 50px;
+    flex: 1;
+    flex-wrap: wrap;
+    align-self: stretch;
+    align-content: center;
+}
+
+.content:nth-of-type(odd) .content-wrap {
     background-color:#2E4A76;
     color: #ffffff;
-}
-
-.content:nth-of-type(odd) img {
-    float: left;
-}
-
-.content:nth-of-type(even) img {
-    float: right;
-}
-
-.content-wrap {  
-    padding: 50px;
-    width: 50%;
-}
-
-.content:nth-of-type(odd) .content-wrap {  
-    margin-left: 50%;
 }
 
 .content-wrap h3 {
@@ -181,3 +168,41 @@ footer {
 .home div {
     color: #000000;
 }
+
+@media screen and (min-width: 1200px) {    
+    main {
+        width: 1200px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .content:nth-of-type(even) img {
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .benefit {
+        flex: 0 0 33%;
+    }
+
+    .contents img {
+        width: 100%;
+    }
+
+    .content-wrap {
+        padding: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+    }    
+  }
+  
+  @media screen and (max-width: 576px) {
+    .benefit {
+        flex: 1;
+    }
+  }
