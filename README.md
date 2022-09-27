@@ -16,11 +16,11 @@ To use this application, you can click on one of the links in the navigation to 
 
 The following image shows the web application's previous appearance and functionality:
 
-![The Horiseon webpage includes a navigation bar, a header image, and cards with text and images at the bottom of the page.](./Assets/01-html-css-git-homework-demo.png)
+![The Horiseon webpage includes a navigation bar, a header image, and cards with text and images at the bottom of the page.](./assets/01-html-css-git-homework-demo.png)
 
 The follow image shows how the web application appears currently:
 
-![The Horiseon webpage includes a navigation bar, a header image, and cards with text and images at the bottom of the page.](./Assets/01-html-css-git-homework-after.jpg)
+![The Horiseon webpage includes a navigation bar, a header image, and cards with text and images at the bottom of the page.](./assets/01-html-css-git-homework-after.jpg)
 
 > **Note**: This layout was primarily designed for desktop viewing, but I have added responsive CSS using Flexbox.
 
