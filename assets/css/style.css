@@ -4,6 +4,19 @@
     margin: 0;
 }
 
+/* element styles */ 
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+article {  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 body {
     font-size: 16px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -13,11 +26,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     padding: 20px;
-}
-
-a {
-    color: #ffffff;
-    text-decoration: none;
 }
 
 header {
@@ -62,6 +70,7 @@ section {
     margin-bottom: 30px;
 }
 
+/* oo classes */
 .hero {
     height: 520px;
     width: 100%;
@@ -105,13 +114,6 @@ section {
 .contents {    
     display: flex;
     flex-wrap: wrap;
-}
-
-article {  
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 
 .contents img {
@@ -169,6 +171,7 @@ footer {
     color: #000000;
 }
 
+/* media queries */
 @media screen and (min-width: 1200px) {    
     main {
         width: 1200px;
